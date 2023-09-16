@@ -1,5 +1,6 @@
 .sideBar{
     height: 100vh;
+    display: inline;
     border-right: 1px solid black;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -36,6 +37,11 @@
     border-right: 3px solid rgb(139, 10, 10);
 }
 
+.active{
+    background-color: rgb(240, 128, 128);
+    border-right: 3px solid rgb(139, 10, 10);
+}
+
 .nav a span{
     padding-right: 20px;
 }
@@ -56,3 +62,16 @@
     padding: 5px;
 
 }
+
+@media screen and (max-width:800px){
+    .sideBar{
+        height: 120vh;
+    }
+}
+
+@media screen and (max-width:750px){
+    .sideBar{
+        display: none;
+    }
+}
+

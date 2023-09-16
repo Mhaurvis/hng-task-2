@@ -21,6 +21,8 @@ function Movies() {
             .then(data => setMovie(data));
     }, []);
 
+    
+
 
 
 
@@ -34,24 +36,25 @@ function Movies() {
                 }
                  
                 { movie && 
-                <div className='api-stats'><h2>{movie.title}    .  {movie.release_date}   .   {movie.runtime}Mins </h2></div>
+                <div className='api-stats'>
+                    <h2 data-testid="movie-title">{movie.title}</h2>
+                    <h3 data-testid="movie-release-date" className='ex'>{new Date(movie.release_date).toUTCString()}</h3>
+                    <h3 data-testid="movie-runtime" className='ex'>{movie.runtime}Mins</h3> 
+                    <h3 className='ex'><span style={{color: 'gold'}} className='fa fa-star'></span>{movie.vote_average} | 350k</h3>
+                </div>
                 }
 
                 { movie && 
-                <div className='movieOverview'>{movie.overview}</div>
+                <div data-testid="movie-overview" className='movieOverview'>{movie.overview}</div>
                 }
 
                 <div className='butts'>
                     <button className='butt1'><span className='fa fa-link'></span> See Showtimes</button>
                     <button className='butt2'><span className='fa fa-list'></span> Watch More Options</button>
-                    <img style={{width: '70%', height: '200px'}} src={Rect} alt="" />
+                    <img style={{width: '100%', height: '200px'}} src={Rect} alt="" />
                 </div>
 
-                <div>5</div>
             </div>
-            {/* {!movie && <Loader />}
-            {!movie && <h1>Loading...</h1>}
-            { movie && <h1>{movie.overview}</h1>} */}
         </div>
     )
 }

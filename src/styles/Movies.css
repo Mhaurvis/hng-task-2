@@ -21,13 +21,23 @@
 }
 
 .api-stats{
+    display: flex;
+    justify-content: space-between;
     grid-column: span 2;    
+}
+
+.api-stats h2{
+    color: rgb(241, 50, 82);
+}
+
+.ex{
+    font-weight: 400;
 }
 
 .butts button{
     display: block;
     border:1px solid white;
-    width: 70%;
+    width: 100%;
     padding: 5px;
 }
 
@@ -37,5 +47,16 @@
 }
 
 .butt2{
-    background-color: rgb(223, 158, 169);
+    background-color: rgb(59, 59, 59);
+}
+
+@media screen and (max-width:800px){
+    .movieOverview{
+        grid-column:  span 2;
+    }
+
+    .detMovies{
+        display: flex;
+        flex-direction: row;
+    }
 }

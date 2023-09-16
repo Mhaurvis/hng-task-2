@@ -13,8 +13,9 @@ const MovieLists = () => {
     useEffect(() => {
         fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=1a4ffa1b8e0fa13200d8c8fde4042869&language=en-US&page1")
         .then(res => res.json())
-        .then(data => setMovieList(data.results.slice(0, 12)));
+        .then(data => setMovieList(data.results.slice(0, 10)));
     }, []);
+
 
     return(
         <div className="contents">
@@ -25,11 +26,11 @@ const MovieLists = () => {
 
             <div className='movieList'>
                 { movieList.map((movie) => (
-                   <Link className='card' key={movie.id} to={`/movies/${movie.id}`}>
-                   <img className='w-full object-cover' style={{width: '18rem'}} src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} />
+                   <Link className='card' data-testid="movie-card" key={movie.id} to={`/movies/${movie.id}`}>
+                   <img className='w-full object-cover' data-testid="movie-poster" style={{width: '18rem'}} src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} />
                    <div className='card-body'>
-                       <p>Released Date:{movie.release_date}</p>
-                       <h2>{movie.original_title}</h2>
+                       <p data-testid="movie-release-date">Released Date:{movie.release_date}</p>
+                       <h2 data-testid="movie-title">{movie.original_title}</h2>
                        <div className='rating'>
                             <div className='imdb'>
                                 <img src={imdb} alt='imdb-img' />
