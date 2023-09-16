@@ -38,6 +38,15 @@
     color: white;
 }
 
+.signin{
+    border: 1px solid white;
+    padding: 10px;
+    color: white;
+    background-color:#dc143c;
+    margin-left: 5px;
+    display: none;
+}
+
 @media screen and (max-width:1070px){
     .movie-container{
         margin-bottom: 5em;
@@ -50,6 +59,12 @@
 @media screen and (max-width:830px){
     .movie-details{
         width: 80vw;
+    }
+}
+
+@media screen and (max-width:650px){
+    .signin{
+        display: inline-block;
     }
 }
 

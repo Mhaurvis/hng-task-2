@@ -38,9 +38,9 @@ function Movies() {
                 { movie && 
                 <div className='api-stats'>
                     <h2 data-testid="movie-title">{movie.title}</h2>
-                    <h3 data-testid="movie-release-date" className='ex'>{new Date(movie.release_date).toUTCString()}</h3>
-                    <h3 data-testid="movie-runtime" className='ex'>{movie.runtime}Mins</h3> 
-                    <h3 className='ex'><span style={{color: 'gold'}} className='fa fa-star'></span>{movie.vote_average} | 350k</h3>
+                    <h3 style={{fontWeight: '600'}} data-testid="movie-release-date" className='ex'>{new Date(movie.release_date).toUTCString()}</h3>
+                    <h3 style={{fontWeight: '600'}} data-testid="movie-runtime" className='ex'>{movie.runtime}Mins</h3> 
+                    <h3 style={{fontWeight: '600'}} className='ex'><span style={{color: 'gold'}} className='fa fa-star'></span>{movie.vote_average} | 350k</h3>
                 </div>
                 }
 

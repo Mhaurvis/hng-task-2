@@ -6,7 +6,7 @@ import '../styles/searchBar.css';
     const SearchBar = () => {
         return(
             <div className="search-bar">
-                <input type="text" placeholder="What do you want to watch?"  />
+                <input type="text" placeholder="Seacrh Here"  />
                     <FontAwesomeIcon icon={faSearch} className='search-icon' />
             </div>
         );
