@@ -1,0 +1,58 @@
+.sideBar{
+    height: 100vh;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top-right-radius: 34px;
+    border-bottom-right-radius: 34px;
+}
+
+.sideLogo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 20px;
+}
+
+/* .nav{
+    padding-bottom: 30px;
+} */
+
+.nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    color: black;
+}
+
+.nav a:hover{
+    background-color: rgb(240, 128, 128);
+    border-bottom-right-radius: 1em;
+    border-right: 3px solid rgb(139, 10, 10);
+}
+
+.nav a span{
+    padding-right: 20px;
+}
+
+.extras{
+    border: 1px solid red;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 20px;
+    font-size: smaller;
+}
+
+.extras button{
+    background-color: rgb(240, 128, 128);
+    color: white;
+    border: white;
+    border-radius: 4px;
+    padding: 5px;
+
+}

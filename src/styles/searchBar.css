@@ -1,0 +1,23 @@
+.search-bar{
+    position: relative;
+}
+
+input[type="text"]{
+    flex-grow: 1;
+    padding: 10px;
+    width: 28vw;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 4px;
+}
+
+input::placeholder{
+    color: white;
+}
+
+.search-icon{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+}
