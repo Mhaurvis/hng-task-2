@@ -22,3 +22,13 @@
     color: gray;
     margin-top: 1.5em;
 }
+
+@media screen and (max-width:400px){
+    .links a{
+        text-decoration: none;
+        padding-right: 15px;
+        color: black;
+        display: flex;
+        font-weight: 600;
+    }   
+}

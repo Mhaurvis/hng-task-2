@@ -20,17 +20,17 @@ const MovieLists = () => {
     return(
         <div className="contents">
             <div className="checkIt">
-                <p>Featured Movies</p>
+                <p className='feat'>Featured Movies</p>
                 <p>See more <span className="fa fa-caret-right"></span></p>
             </div>
 
             <div className='movieList'>
                 { movieList.map((movie) => (
-                   <Link className='card' data-testid="movie-card" key={movie.id} to={`/movies/${movie.id}`}>
+                   <div className='card' data-testid="movie-card" key={movie.id}>
                    <img className='w-full object-cover' data-testid="movie-poster" style={{width: '18rem'}} src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} />
                    <div className='card-body'>
                        <p data-testid="movie-release-date">Released Date:{movie.release_date}</p>
-                       <h2 data-testid="movie-title">{movie.original_title}</h2>
+                      <Link to={`/movies/${movie.id}`}><h2 data-testid="movie-title">{movie.original_title}</h2></Link>
                        <div className='rating'>
                             <div className='imdb'>
                                 <img src={imdb} alt='imdb-img' />
@@ -42,7 +42,7 @@ const MovieLists = () => {
                             </div>
                         </div>
                    </div>
-               </Link>
+               </div>
                 )) 
                 }
             </div>

@@ -1,20 +1,95 @@
-# HNGx-Stage-Two
-A movie discovery web application that allows users to search for movies, view details about them, and save their favorite movies.
+TMDB Movie App
+==============
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+The TMDB Movie App is an interactive movie application that retrieves movie data from The Movie Database (TMDb) API. It empowers users to delve into an extensive movie collection, access comprehensive movie details, and effortlessly search for their preferred films.
 
-## How To Run The Project Locally
+Notable Features
+----------------
 
-After cloning or forking the site properly, run the development server:
+-   Explore an extensive array of movies sourced from TMDb.
+-   Access comprehensive movie details including titles, release dates, synopses, and user ratings.
+-   Perform movie searches by titles or keywords.
+-   Enjoy a user-friendly and responsive design for a seamless browsing experience across various devices.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Getting Started
+---------------
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Follow these guidelines to configure and run the TMDB Movie App on your local machine.
 
-You can start editing the page by modifying `app/page.jsx`. The page auto-updates as you edit the file.
+### Prerequisites
+
+Make sure you have Node.js installed on your computer.
+
+### Installation
+
+1.  Clone the repository:
+
+    shellCopy code
+
+    `git clone https://github.com/Mhaurvis/hng-task-2.git`
+
+2.  Navigate to the project directory:
+
+    shellCopy code
+
+    `cd movie-app`
+
+3.  Install project dependencies:
+
+    shellCopy code
+
+    `npm install`
+
+4.  Go to `Movies.jsx`, `MovieLists.jsx` file in the project's src/pages and insert your TMDb API key:
+
+    plaintextCopy code
+
+    `API_URL = `https://api.themoviedb.org/3/trending/movie/day?api_key=your_api_key_here`
+
+    Replace `your_api_key_here` with your actual TMDb API key.
+
+### Usage
+
+Initiate the development server:
+
+shellCopy code
+
+`npm start` or `npm run dev`
+
+Open your web browser and access the application at [http://localhost:3000](http://localhost:3000/).
+
+### Deployment
+
+You have the option to deploy this application to platforms like Netlify, Vercel, or GitHub Pages.
+
+Technology Stack
+----------------
+
+-   React: A JavaScript library for crafting user interfaces.
+-   TMDb API: The Movie Database API for accessing movie data.
+
+Contribution
+------------
+
+Contributions to this project are highly encouraged! Please refer to the CONTRIBUTING.md file for details regarding our code of conduct and the procedure for submitting pull requests.
+
+Licensing
+---------
+
+This project operates under the MIT License. For additional information, consult the LICENSE.md file.
+
+Appreciations
+-------------
+
+-   The Movie Database (TMDb) for generously providing movie data and access to their API.
+-   The vibrant open-source community for their invaluable contributions to the tools and libraries applied in this project.
+
+Contact me for future collaboration
+------------
+
+-   Email: <krizzymax12@gmail.com>
+
+Live link
+------------
+
+[https://hng-task-2-silk.vercel.app//](https://hng-task-2-silk.vercel.app//)

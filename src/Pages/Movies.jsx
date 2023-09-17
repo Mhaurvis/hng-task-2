@@ -51,7 +51,7 @@ function Movies() {
                 <div className='butts'>
                     <button className='butt1'><span className='fa fa-link'></span> See Showtimes</button>
                     <button className='butt2'><span className='fa fa-list'></span> Watch More Options</button>
-                    <img style={{width: '100%', height: '200px'}} src={Rect} alt="" />
+                    <img style={{width: '100%', height: '90px'}} src={Rect} alt="" />
                 </div>
 
             </div>

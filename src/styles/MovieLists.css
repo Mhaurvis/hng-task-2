@@ -96,7 +96,7 @@
         gap: 20px;
     }
 
-    .checkIt p:nth-child(2){
-       display: none;
+    .feat{
+        font-size: 80px;
     }
 }
