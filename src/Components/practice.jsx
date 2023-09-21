@@ -8,7 +8,7 @@ function Movie(){
     const [movieData, setMovieData] = useState([]);
 
     useEffect(() =>{
-        fetch("https://api.themoviedb.org/3/movie/popular?api_key=1a4ffa1b8e0fa13200d8c8fde4042869&language=en-US&page=2")
+        fetch("https://api.themoviedb.org/3/movie/popular?api_key=1a4ffa1b8e0fa13200d8c8fde4042869&language=en-US&page=3")
         .then((res) => res.json())
         .then((data) => setMovieData(data.results.slice(0, 1)))
     }, []);

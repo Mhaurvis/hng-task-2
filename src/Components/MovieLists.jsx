@@ -13,7 +13,7 @@ const MovieLists = () => {
     useEffect(() => {
         fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=1a4ffa1b8e0fa13200d8c8fde4042869&language=en-US&page1")
         .then(res => res.json())
-        .then(data => setMovieList(data.results.slice(0, 10)));
+        .then(data => setMovieList(data.results.slice(0, 20)));
     }, []);
 
 
@@ -29,8 +29,8 @@ const MovieLists = () => {
                    <div className='card' data-testid="movie-card" key={movie.id}>
                    <img className='w-full object-cover' data-testid="movie-poster" style={{width: '18rem'}} src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} />
                    <div className='card-body'>
-                       <p data-testid="movie-release-date">Released Date:{movie.release_date}</p>
-                      <Link to={`/movies/${movie.id}`}><h2 data-testid="movie-title">{movie.original_title}</h2></Link>
+                       <p style={{fontWeight: '600'}} data-testid="movie-release-date">Released Date: {movie.release_date}</p>
+                      <Link className='linkMe' to={`/movies/${movie.id}`}><h2 data-testid="movie-title">{movie.original_title}</h2></Link>
                        <div className='rating'>
                             <div className='imdb'>
                                 <img src={imdb} alt='imdb-img' />

@@ -2,7 +2,8 @@ import React from 'react';
 import '../styles/Header.css';
 import SearchBar from '../Components/searchBar';
 import tv from '../Images/tv.png';
-import Menu from '../Images/Menu.png';
+import '@fortawesome/fontawesome-free/css/all.css';
+import { Link } from 'react-router-dom';
 
 
 function Header(){   
@@ -23,8 +24,9 @@ function Header(){
                 </div>
             {/* SignIn Options */}
                 <div className='signInLogo'>
-                    <p><a href="">Sign in</a></p>
-                    <img src={Menu} alt='SignInLogo' />
+                    {/* <p><a href="">Sign in</a></p> */}
+                    {/* <Link>Sign In</Link> */}
+                    <button className='head-btn'>Sign up <span className='fa fa-user-circle'></span></button>
                  </div>
             </div>
 

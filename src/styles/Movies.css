@@ -1,74 +1,101 @@
-.detMovies{
+.MovieDetails{
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 7fr;
     width: 100%;
+    height: 100vh;
+    gap: 15px;
+}
+
+.sideBar{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height:96.9% ;
+    overflow-x: hidden;
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid black;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.sideTopBar{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0px 2px;
+    width: 100%;
+}
+
+.sideTopBar p{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.linkes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
     height: 100vh;
 }
 
-.yello{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 1em;
+.linkes .linking{
+   width: 100%;
+   height: 15vh;
+   margin-top: 25px;
+   padding-left: 45px;
+   text-decoration: none;
+   color: black;
 }
 
-.yello img{
-    width: 100%;
-    height: 450px;
+.linkes .linking:hover{
+    font-size: 20px;
+    transition: all .5s ease-in-out;
 }
 
-.divImg{
-    grid-column: span 2;
-}
-
-.api-stats{
-    display: flex;
-    justify-content: space-between;
-    grid-column: span 2;    
-}
-
-.api-stats h2{
-    color: rgb(241, 50, 82);
-}
-
-.ex{
-    font-weight: 400;
-}
-
-.butts button{
-    display: block;
-    border:1px solid white;
-    width: 100%;
+.extras{
+    font-size: 12px;
+    border: 1px solid rgb(247, 123, 123);
     padding: 5px;
 }
 
-.butt1{
-    background-color: rgb(241, 50, 82);
+.displayPage{
+    margin: 5px;
+    overflow-x: none;
+}
+
+.dispOne{
+    grid-column: span 4;
+}
+
+.dispOne img{
+    display: block;
+    width: 100%;
+    height: 500px;
+}
+
+.dispTwo{
+    display: flex;
+    align-items: center;
+    gap: 20px ;
+}
+
+.dispFour{
+    margin-bottom: 4em;
+}
+
+.dispFour button{
+    padding: 15px 2em;
+    margin-right: 1em;
     color: white;
+    background-color: rgb(247, 123, 123);
+    border-radius: 2em;
+    border: 1px solid white;
 }
 
-.butt2{
-    background-color: rgb(59, 59, 59);
-}
-
-@media screen and (max-width:800px){
-    .movieOverview{
-        grid-column:  span 2;
-    }
-
-    .detMovies{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .api-stats{
-        font-size: x-small;
-    }
-}
-
-@media screen and (max-width:450px){
-    .yello img{
-        width: 100%;
-        height: 300px;
-    }
-    
+.footer{
+    margin-top: 1em;
 }

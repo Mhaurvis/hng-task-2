@@ -1,4 +1,4 @@
-.sideBar{
+/* .sideBar{
     height: 100vh;
     display: inline;
     border-right: 1px solid black;
@@ -14,10 +14,6 @@
     align-items: center;
     padding: 20px;
 }
-
-/* .nav{
-    padding-bottom: 30px;
-} */
 
 .nav a{
     display: flex;
@@ -74,4 +70,4 @@
         display: none;
     }
 }
-
+ */

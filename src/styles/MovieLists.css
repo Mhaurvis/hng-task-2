@@ -9,7 +9,7 @@
 }
 
 .checkIt p:nth-child(1){
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
 }
 
@@ -43,6 +43,11 @@
     display: flex;
     width: 100%;
     font-size: x-small;
+}
+
+.linkMe{
+    text-decoration: none;
+    color: black;
 }
 
 .imdb{

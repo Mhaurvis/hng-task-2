@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    line-height: 1.5em;
+    line-height: 10px;
 }
 
 .socials span{
@@ -20,7 +20,7 @@
 
 .copyRights{
     color: gray;
-    margin-top: 1.5em;
+    margin-top: 1em;
 }
 
 @media screen and (max-width:400px){
@@ -28,7 +28,7 @@
         text-decoration: none;
         padding-right: 15px;
         color: black;
-        display: flex;
+        text-align: center;
         font-weight: 600;
     }   
 }
