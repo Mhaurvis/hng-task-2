@@ -11,9 +11,15 @@
     margin-bottom: 1em;
 }
 
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+
 .links a{
     text-decoration: none;
     padding-right: 15px;
+    flex-direction: row;
     color: black;
     font-weight: 600;
 }

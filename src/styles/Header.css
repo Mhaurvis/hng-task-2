@@ -30,26 +30,24 @@
 .signInLogo{
     display: flex;
     align-items: center;
-    gap: 20px;
 }
 
-.signInLogo a{
-    font-size: 25px;
+.head-btn{
+    background-color: #c9302c;
+    font-size: 15px;
     font-weight: 600;
+    padding: 0.8em 1.5em;
+    border: 1px solid black;
+    border-radius: 8px;
     color: white;
-    text-decoration: none;
 }
+
+
 
 .heroTalk{
     color: white;
     position: absolute;
     top: 250px;
-}
-
-.head-btn{
-    padding: '8px 3em';
-    color: 'white';
-    
 }
 
 @media screen and (max-width:650px){

@@ -24,8 +24,6 @@ function Header(){
                 </div>
             {/* SignIn Options */}
                 <div className='signInLogo'>
-                    {/* <p><a href="">Sign in</a></p> */}
-                    {/* <Link>Sign In</Link> */}
                     <button className='head-btn'>Sign up <span className='fa fa-user-circle'></span></button>
                  </div>
             </div>
