@@ -21,3 +21,9 @@ input::placeholder{
     right: 5px;
     top: 10px;
 }
+
+@media (max-width:310px){
+    input[type="text"]{
+        width: 100%;
+    }
+}

@@ -58,8 +58,8 @@
 
 @media screen and (max-width:450px){
     .movieLogo img{
-        width: 50px;
-        width: 50px;
+        width: 30px;
+        height: 30px;
     }
 
     .movieLogo p{
