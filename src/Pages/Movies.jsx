@@ -53,7 +53,7 @@ function Movies() {
             <div className='displayPage'>
                 <div className='dispOne'>
                     { movie &&
-                    <img style={{borderBottomRightRadius: '2em'}} src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`} alt="Poster Image" />
+                    <img src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`} alt="Poster Image" />
                 }
                 </div>
              
