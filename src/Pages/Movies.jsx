@@ -69,7 +69,7 @@ function Movies() {
           
                  { movie &&
                 <div className='dispThree'>
-                    <p style={{fontSize: 'large', fontWeight: '500'}}>{movie.overview}</p>
+                    <p style={{fontWeight: '500'}}>{movie.overview}</p>
                 </div>
                 }
 
