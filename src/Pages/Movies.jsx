@@ -61,9 +61,9 @@ function Movies() {
                 <div className='dispTwo'>
             
                     <h1 style={{color: 'rgb(180, 52, 52)'}} >{movie.title}</h1>
-                    <h3>{movie.release_date}</h3>
-                    <h3>{movie.runtime} Mins.</h3>
-                    <h3> <span className='fa fa-star' style={{color: 'gold'}}></span> {movie.vote_average}</h3>
+                    <h4>{movie.release_date}</h4>
+                    <h4>{movie.runtime} Mins.</h4>
+                    <h4> <span className='fa fa-star' style={{color: 'gold'}}></span> {movie.vote_average}</h4>
                 </div>
                  }
           
