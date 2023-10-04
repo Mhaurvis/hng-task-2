@@ -1,18 +1,13 @@
 .myFooter{
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     line-height: 10px;
 }
 
 .socials span{
     padding-right: 10px;
     margin-bottom: 1em;
-}
-
-.links{
-    display: flex;
-    justify-content: space-between;
 }
 
 .links a{
@@ -31,9 +26,11 @@
 @media screen and (max-width:400px){
     .links a{
         text-decoration: none;
+        text-align: center;
         padding-right: 15px;
         color: black;
         text-align: center;
         font-weight: 600;
+        font-size: 12px;
     }   
 }

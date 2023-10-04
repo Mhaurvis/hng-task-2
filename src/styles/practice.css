@@ -32,11 +32,15 @@
     font-weight: 600;
 }
 
+.heroBtns{
+    display: flex;
+}
+
 .movie-details button{
     background-color: #dc143c;
     border: 1px solid white;
     border-radius: 8px;
-    padding: 10px;
+    padding: 8px;
     color: white;
 }
 

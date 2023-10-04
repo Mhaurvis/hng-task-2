@@ -11,7 +11,7 @@ const MovieLists = () => {
     const [movieList, setMovieList] = useState([]);
 
     useEffect(() => {
-        fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=1a4ffa1b8e0fa13200d8c8fde4042869&language=en-US&page1")
+        fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=1a4ffa1b8e0fa13200d8c8fde4042869&language=en-US&page=5")
         .then(res => res.json())
         .then(data => setMovieList(data.results.slice(0, 20)));
     }, []);

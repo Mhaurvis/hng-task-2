@@ -30,8 +30,11 @@ function Movie(){
                             </div>
                         </div>
                         <p className='overview'>{movie.overview}</p>
-                        <button className='btn btn-danger btn-sm'> <span className='fa fa-play-circle'></span> WATCH TRAILER</button>
-                        <button className='signin'>SIGN IN <span className='fa fa-pencil'></span></button>
+                        <div className='heroBtns'>
+                            <button className='btn btn-danger btn-sm'> <span className='fa fa-play-circle'></span> WATCH TRAILER</button>
+                            <button className='signin'>SIGN IN <span className='fa fa-pencil'></span></button>
+                        </div>
+
                     </div>
                 </div>
             ))}
